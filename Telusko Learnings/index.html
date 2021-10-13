@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to jQuery UI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.theme.css">
+</head>  
+<body>
+    
+ <h2>Resizable Feature in jQuery UI</h2>
+
+ <div id="mydivs">
+    <img id="resize" width="200px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAw1BMVEX///8AAAABAQH7//5a0HpysYJc0H9b0X1gznxdz4Rb0oEAAANcz31es3oAFQNg0IBRtG1TnWzJycnv7+9du3fX19cQIReJiYl0dHQdHR3k5OQNDQ2xsbEPIhMoRi1myoNWVlZdu3suLi48PDxxcXFOTk6zs7P29vYiSi6Ojo4ZGRne3t7Hx8dPT09mZmZvsYKmpqaYmJhgYGAnJyd/f39CQkJRoWRpnnZZ0nVbvnQOJRMrWTUqQy41NTVrxYYAEQBNtWRj+QcvAAAI30lEQVR4nO2cC3viNhaGsZa1A8PWXbsuF2cnNBB7uQ7X6TRd2v7/X7WSzpEsGZkQwsw05rx9OrZ1PZ+OJEsijxsNgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiCIm+PXf9aVT58+iUvjR7+tCdpt3/fbQRDgo7wG6hkQKTA5v/VFIpmpXYXKjVdn4nJRRSVtiJH5fSPYAcYqs5vNL34Yho0fQz/sdDoicyhuBL589DFYBhSE4V1xG8pYvLrxjdxQiytxqai7u7vQR0K0y++U8wX8v6NiQojphK1WK5QKW76qXDz7L3JWqvOKun7+EOg0A95IQVOo0grDb4xhz1vKqIiQvQD6jKXwrErPs+zFVGLcfIVKlC9bso+K4SYUhv6Xu19+uhq/cNTVuDVijUfBbxzjvhRrFHt+vb/JMuUUIxT6nebnH34+l//w/04n4Kgr3qsgO/RnVVIRy2/NxCbPz89FqjPqfX7+/UH0TNlLg+DfXg352ApwHIadL5+9D054OnYcdCLWSCFi8ZaVMhUpHNkZ2FfOyxhzFFEqGS9w/d+DeDFKHzabdfMhbw7m/fehgzNNjRX6pPC9wlChX1uF4MOPD21S+H65GYUBKXy/kMJ3D7uZmab+CuvbS2/Dh3wHXPPdk1RYfx/WVqF6W9R99/Rtd8CMfe0aStWdUlhli8xVGVeRWR2clROwiuTMvhp1V1aJD8yOrFZ4orFPSdcCShVVm84Mw6fbbd+MPyrOKNZuqn5f5yybVDHTiKKyyMWKx/ZcEWtZ+krcZmm5Im8iwuePhdO6MtMjKvS8wySK80ajEc+yTaqUe088U5SMMRv/dz+H2nZF6cNVEosfeeNovXA0+ok1zcD5Y3HCY7quiLm0NBG3g7RckZeJ8HxUBNzLTAdU0l/lZh1j5a6NfO5q9zwmkCJLlb/GiWXExvLiC2uaCxR6boWce1Soq1/JTOjUbVIqrIuGDg2F3NhphAJVQLoqm7FKrUFxXR+yMxRqTIUsOiqtB6lA4U4WzfXMtUAmB68KsOxIjWELb/yq92GSIzKjeoi0wtwmO8uHToXdhqxkMM/u59iug62tUD5lqi3VrIYBImeWKY9kRSUn1zR8bADpDho1hcepVriZ9k2m0CyvVshtmInbeCdzTSdg57rkQ4ZlNBqRMt3bob6xzJkuE50VvXjmqq1ndhupHRSWJy7Z0Jco3Mte0lUxa63D7qU45CI5UQvb+zEETFXOFHwaH0oKX9oflhUqHz65El+icCnjntAm7xHm/q2pkDMpBMLLEptCVKZfquDFlZpQL/ThlRWqVwK84YRl2SzK7td9WyHObtFW+wenwiX2SZh7ZXcY9L1X+XB3hkK9mrnEh0/SrHgsC0qttYJW2IP5LukXAvcQYtcDs/LGVvjSHl/5sKja6UNWrZCVFTLHTMP9M9mX6waFXW+MArd6Qadafm3XMzED2RvH4XrXNVh61Qq9kz5kaojxBLOsdzhW2Bviimdprr2hhLHR8jwOMmQ64KxzmiqFNtkbFKbmkiZP1o96ugeD72OMS8zFd3TUk8Q0ZXXdv4dC8VBateXZ1jMVFqyL9QpUZRYp6Etvz2yFl/bS6yj0YH15b5cWDz2nwnxfdEpQeLDrmf4tFUq/7HVXBClDY1g1uNkDmI4inNLU/GQrZKgwMRemlyvsjg16i1MK1WbpaG+xxd2T+Ddd4kZPkqSGQl7kHt4pctfBio0aH4fmbsk7qHYwFV46Dl/1xgdBe7dCT08gh55eQPdMhaLXQiPFI6UQnpe2wo3ZoV6r8Ph9yExOKWRVCvtFgDpjmfYGykqtkAtk3jYuwgXGq68489CBTAl865pGrR1UVJXCddntsEieij3MYtPrrgzxCxhLhcJ4YVQLzvXULJSoTg6hc2UsBr1qTeNUWKZKYRe7lA6Qb7NYGLeRgiZGH5mh6UrFxCy8ESvHg083ahUgLtA48aOq5hvuLcDUVREQawccYi0Ikd00KrJ1URIMMnWGgd1g5hXTK64C9B742nuLylMMvdaID5jMG8tnONuJigFlVGiMwx0eWqg9PS7eRqZgCW4hh9b57BV9qBXOjmLU6nqGmZZ5YTpW0Fhju+xyrJAZCmEyg71yYzCFZkJBCb6p9nhqc++VFF7qw1li86TPaXI7YijswROHfD7Z7dZ48hRvpQ0M12yz1a63W6mHqakQtvVq/897u5TQx7R5xAvtznF5Pusbbf4mhWUWWmEJeGU5jsW6OKEP86OoHHqi4UP5/xa6Qo4bwNHsuNDB6OyzNtXBrqTw6ExUHjaAEeOyxBzEGwrRXuzRyRRsGx2dQyYj40z4rFWb6l/mPqxSIatUKA6O7NV13IVTT1nuws43WOJbzlboFV1Bzcpp1zrWjdepeeh91pqGeeNYMDZ9mMcOpA/njoiNhyNioZdk1iZQbi6Wc7Umjee9KaQX/Zfnz3fF1OEtBrLMwV4VOu1GmDOOJlvVNV/hQ0PqS1T+7maEPi6WvfHmyf6hCPMdhjxucdCqi6XS8Y2qTwako81yuRxNywmUwqv9QvpyG5TSvzbDGZXaj9/hN+BvDCl899zG32LU++9pbkhhrf+urf5/m0h/X/q+YbVXeDu9lBS+Y25GYf1nmvorhF4aBkEn+Py9Tbou9mliGDT9uinUp/odVBgKhaxmfNDj8JYU6g9THKc2Qt0f0Cjlqwh2FGUHqdvqSs5DlOF9/EN8r8ZSiJW4GoQVZrku4mopdNy5ijoZyy0p2f3B0s7sOyuKwVwamArrB1fYLt4W7M8f6safvz9AL235YdP/41815KcA3/h+2Gm3Wie+9PYu4R30rqm+oiQ+jHXnhqdw3lclVlSVcRyEt458b0F8ly6Q37fjCn35cbNO4IR7WcWIs0d3IiOxwgh15DOC1C3mqzDj1fjtdieEjwhyH8qP77VqS+OvZs1p/PpJ8r0/xfn1aPyj7jj/9IAgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgiBP8Hw62p/yem27TAAAAAElFTkSuQmCC" alt="">
+ </div>
+
+</body>
+<script src="jquery-3.6.0.js"></script>
+<script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+
+<script>
+   
+  $("#mydivs").datepicker({
+    // maxWidth: 500,
+    // maxHeight: 500,
+    // autoHide: true,
+    // ghost: true,
+
+  });
+
+</script>
+
+</html>

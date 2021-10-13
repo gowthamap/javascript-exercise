@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set up jQuery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- 
+    append() - Inserts content at the end of the selected elements
+    prepend() - Inserts content at the beginning of the selected elements
+    after() - Inserts content after the selected elements
+    before() - Insets content before the selected elements
+
+    addClass() - Adds one or more classes to the selected elements
+    removeClass() - Removes one or more classes from the selected elements
+    toggleClass() - Toggles between adding/removing classes from the selected elements
+    css() - Sets or returns the style attribute
+ -->
+
+<body>
+    
+   <h2>jQuery - DOM manipulations - PART 4</h2>
+
+    <button id="btn1">Add Class</button>
+    <button id="btn2">Remove Class</button>
+    <button id="btn3">Toggle Class</button>
+    <button id="btn4">css</button>
+    <br><br>
+
+
+    <div id="div1" class="mydivs">
+        <p id="p1" class="p1class" value="hello world">This is third <b>paragraph</b> in <i>second </i> division</p>
+     
+        <p>This is third <b>paragraph</b> in <i>second</i> division</p>
+
+    </div>
+
+    <div id="div2">
+        <p id="p21" class="p1class" value="hello world">This is third <b>paragraph</b> in <i>second </i> division</p>
+     
+    </div>
+    
+</body>
+
+    <script src="jquery-3.6.0.js"></script>
+
+    <script>
+
+        $(document).ready(function (){
+
+           $("#btn1").click(function(){
+               $("#div1").addClass("newdivclass newparaclass");
+           })
+
+           $("#btn2").click(function(){
+               $("#div1").removeClass("newdivclass newparaclass");
+           })
+
+           $("#btn3").click(function(){
+               $("#div1").toggleClass("newdivclass");
+           })
+
+           $("#btn4").click(function(){
+
+                $("#div1").css("font-size","20px");
+            //    alert($("#div1").css("font-size"));
+           })
+
+
+        });
+       
+
+    </script>
+
+</html>

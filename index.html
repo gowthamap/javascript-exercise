@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Javascript</title>
+</head>
+<body>
+    <button onclick="show()">Click me</button>
+
+    <script>
+        function show(){
+            display()
+            console.log("Button clicked");
+            var a=1;
+            var b=2;
+            var sum=a+b;
+            console.log("sum="+sum);
+
+            var c=4;
+            var c=6;
+            console.log(c);
+
+            let d=4;
+                d=5;
+            console.log(d);
+
+            const e=11;
+            
+            // control statements
+            if(e%2==0){
+                console.log("Number is even");
+            }else{
+                console.log("Number is odd");
+            }
+
+
+            // for loop
+            for(var i=0; i<10; i++){
+                console.log(i);
+            }
+
+            // array
+            var arr=["apple","orange","mango",34]
+            console.log(arr)
+            console.log(arr [3])
+
+            // object
+            var person=[{
+                Name:"Nikhil Kilivayil",
+                Age:18,
+                Place:"Malappuram"
+            },
+            {Name:"Sonu Gopal",
+            Age:18,
+            Place:"Malappuram"
+            }]
+
+            console.log(person);
+            console.log(person[1].Name);
+
+        } 
+
+
+        function display(){
+                console.log('Hey');
+            }
+
+    </script>
+
+</body>
+</html>
