@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    let myName = 'Kyle'
+
+    function printName() {
+        console.log(myName);
+    }
+
+    myName = 'Joey'
+
+    printName()
+
+    myName = 'Kate'
+
+    printName();
+
+
+        function outerFunction(outerVariable) {
+            const outer2 = 'Hi'
+            return function innerFunction(innerVariable) {
+                console.log('Outer Variable: ' + outerVariable);  
+                console.log('Inner Variable: ' + innerVariable);
+                console.log(outer2);
+            }
+        }
+
+        const newFunction = outerFunction('outside')
+        newFunction('inner');
+
+        // function outerFunction(url) {
+        //     fetch(url).then(() => {
+        //         console.log(url);
+        //     })
+        // }
+
+        // const newFunction = outerFunction('outside')
+        //  newFunction('inner');
+
+        
+
+
+</script>
+
+</html>
